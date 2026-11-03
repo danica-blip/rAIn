@@ -1,7 +1,7 @@
 // rain co. assessment form
 // 1. Follow SETUP.md to deploy the Google Apps Script.
 // 2. Paste your Web app URL between the quotes below.
-const FORM_ENDPOINT = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxsBnvR3RbV-ub0qNJegqA43wA5RWL7Ik6Sph3y88c0OTHLedNYcTC_1M6EqsFYQxCC/exec";
 
 (function () {
   const form = document.getElementById("assessment-form");
