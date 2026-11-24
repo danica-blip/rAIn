@@ -20,6 +20,10 @@ const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxsBnvR3RbV-ub0qN
     status.textContent = "";
     status.classList.remove("error");
 
+    if (!form.elements.requestType.value) {
+      showError("Pick what you’d like to book.");
+      return;
+    }
     if (!form.elements.businessType.value) {
       showError("Pick the kind of business you run.");
       return;
@@ -59,7 +63,7 @@ const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxsBnvR3RbV-ub0qN
     } catch (err) {
       showError("Your request didn’t send. Check your connection and try again, or call us.");
       button.disabled = false;
-      button.textContent = "Book my free assessment";
+      button.textContent = "Send my request";
     }
   });
 })();
